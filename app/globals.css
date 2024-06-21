@@ -2,32 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::-webkit-scrollbar {
+  @apply w-1 h-1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar-track {
+  @apply bg-[#4b4b4b];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#FFFFFF];
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#cccccc];
+}
+
+* {
+  @apply box-border select-none text-balance;
+}
+
+ul,
+ol {
+  @apply list-none;
+}
+
+img {
+  @apply max-w-full h-auto;
+}
+
+html {
+  @apply scroll-smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-[#151515] text-[#FFFFFF];
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.nav-link {
+  @apply transition-all duration-200 decoration-transparent cursor-pointer;
+}
+
+.nav-link:hover {
+  @apply text-[#cccccc] underline underline-offset-2 decoration-inherit;
+}
+
+.social-link {
+  @apply flex gap-1 items-center bg-[#2E2E2E] border-[#717171] border-2 rounded-full py-1 px-2 text-xs transition-all;
+}
+
+.social-link:hover {
+  @apply scale-105;
+}
+
+.social-icon {
+  @apply w-5 h-5;
+}
+
+.section-title {
+  @apply font-semibold text-2xl tracking-wide flex gap-1 items-center mb-6;
+}
+
+.skills {
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  @apply grid gap-2;
+}
+
+.skills p {
+  @apply bg-[#2E2E2E] border-[#717171] border-2 rounded-full py-1 px-2 text-xs transition-all cursor-pointer min-w-max;
+}
+
+.skills p:hover {
+  @apply scale-105;
+}
+
+.project-img {
+  -webkit-box-shadow: -1px 1px 5px 9px rgba(113, 113, 113, 0.05);
+  -moz-box-shadow: -1px 1px 5px 9px rgba(113, 113, 113, 0.05);
+  box-shadow: -1px 1px 5px 9px rgba(113, 113, 113, 0.05);
+  @apply relative object-contain aspect-video;
 }
