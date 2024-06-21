@@ -63,14 +63,14 @@ export default function Home() {
             <MdEmail aria-label="Email" className="social-icon" />
             aaronpuli45@gmail.com
           </Link>
-          <Link
-            href="/files/AaronPulidoSalinas.pdf"
+          {/* <Link
+            href="#"
             target="_blank"
             className="social-link"
           >
             <RiProfileFill aria-label="Resume" className="social-icon" />
             Resume
-          </Link>
+          </Link> */}
         </div>
       </section>
       <section id="education" className="my-10">
