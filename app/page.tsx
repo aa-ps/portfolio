@@ -230,10 +230,9 @@ export default function Home() {
             Professor Rating Lookup Extension
           </p>
           <p>
-            Developed a Chrome extension for accessing professor ratings during
-            registration. The project included integrating Chrome's API to embed
-            the rating system into the registration page and using the Rate My
-            Professors API for data retrieval.
+            {
+              "Developed a Chrome extension for accessing professor ratings during registration. The project included integrating Chrome's API to embedthe rating system into the registration page and using the Rate My Professors API for data retrieval."
+            }
           </p>
           <Link
             href="https://github.com/aa-ps/rate-my-vaquero"
