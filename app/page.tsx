@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin, FaGithub, FaCode, FaHashtag } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { RiProfileFill, RiHashtag } from "react-icons/ri";
 import { GiGraduateCap } from "react-icons/gi";
 import { IoLanguage } from "react-icons/io5";
 
@@ -56,21 +55,13 @@ export default function Home() {
             GitHub
           </Link>
           <Link
-            href="mailto:aaronpuli45@gmail.com"
+            href="m&#97;ilto&#58;aaronp&#117;&#108;i45&#64;gmail&#46;&#99;om"
             target="_blank"
             className="social-link"
           >
             <MdEmail aria-label="Email" className="social-icon" />
-            aaronpuli45@gmail.com
+            a&#97;ron&#112;&#117;li45&#64;gma&#105;l&#46;com
           </Link>
-          {/* <Link
-            href="#"
-            target="_blank"
-            className="social-link"
-          >
-            <RiProfileFill aria-label="Resume" className="social-icon" />
-            Resume
-          </Link> */}
         </div>
       </section>
       <section id="education" className="my-10">
@@ -251,21 +242,6 @@ export default function Home() {
             game search and user engagement metrics, and ensured optimal
             performance with a PageSpeed Insights score of 90+.
           </p>
-          <Link
-            href="https://github.com/aa-ps/easytax"
-            target="_blank"
-            className="social-link w-max mt-4 mb-8"
-          >
-            <FaGithub aria-label="GitHub" className="social-icon" />
-            GitHub
-          </Link>
-          <div className="project-img">
-            <Image
-              src={"/images/webgameportal.png"}
-              alt="Web Games Portal Project Photo"
-              fill
-            />
-          </div>
         </div>
       </section>
     </main>
